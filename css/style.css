@@ -158,10 +158,30 @@ h1, h2 {
   text-decoration: none;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  position: relative;
 }
 
-.header__logo:hover, .header__logo:focus {
-  color: #6e774a;
+.header__logo:hover::before, .header__logo:hover::after, .header__logo:focus::before, .header__logo:focus::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+}
+
+.header__logo:hover::before, .header__logo:focus::before {
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__logo:hover::after, .header__logo:focus::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
 }
 
 @media screen and (max-width: 1200px) {
