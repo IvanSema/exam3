@@ -417,6 +417,12 @@ h1, h2 {
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.intro__details:hover {
+  color: #b3b3b3;
 }
 
 .intro__img-block {

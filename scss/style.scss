@@ -376,6 +376,12 @@ h1, h2 {
         font-size: 18px;
         font-weight: 300;
         text-decoration: none;
+        transition-duration: 0.3s;
+
+
+        &:hover{
+            color: darken(white, 30)
+        }
     }
 
 
