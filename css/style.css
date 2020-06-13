@@ -601,13 +601,6 @@ h1, h2 {
 .products__slides {
   max-width: 2500px;
   width: 100%;
-  margin: 0 -40px 0 -40px;
-}
-
-@media screen and (max-width: 1000px) {
-  .products__slides {
-    margin: 0;
-  }
 }
 
 .products__headline {
