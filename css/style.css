@@ -190,6 +190,12 @@ h1, h2 {
   position: relative;
 }
 
+.help__search {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px 0 0;
+}
+
 .intro {
   padding: 390px 0 335px 0;
   background-image: url(../images/about__background.jpg);
@@ -393,6 +399,8 @@ h1, h2 {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   outline: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .intro__img-block:hover, .intro__img-block:focus {
@@ -785,7 +793,21 @@ h1, h2 {
 }
 
 .testimonials {
+  position: relative;
   margin: 0 0 175px 0;
+}
+
+.testimonials__text {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+  font-size: 24px;
+  color: #f7f8f3;
+  bottom: 120px;
+  left: -50px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
 }
 
 .testimonials__slides {
@@ -887,7 +909,7 @@ h1, h2 {
   background-position: center;
   cursor: pointer;
   z-index: 1000;
-  left: 50%;
+  left: 48%;
 }
 
 .prev-bottom:hover, .prev-bottom:focus, .next-bottom:hover, .next-bottom:focus {
@@ -1051,14 +1073,13 @@ h1, h2 {
   color: #6e774a;
   font-size: 16px;
   letter-spacing: 4px;
-  position: relative;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  border: 1px solid transparent;
 }
 
 .form__email:hover, .form__email:focus {
-  -webkit-transform: scale(1.5) translateX(30px) translateY(40px);
-          transform: scale(1.5) translateX(30px) translateY(40px);
+  border: 1px #6e774a solid;
 }
 
 .form__email::-webkit-input-placeholder {
@@ -1092,17 +1113,13 @@ h1, h2 {
   border: none;
   border-left: 2px solid #ced6af;
   cursor: pointer;
-  background-image: url(../images/form__Arrow.png);
-  background-position: center;
-  background-repeat: no-repeat;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  border: 1px solid transparent;
 }
 
 .form__btn:hover, .form__btn:focus {
-  border: none;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  border: 1px #6e774a solid;
 }
 
 .slick-active {

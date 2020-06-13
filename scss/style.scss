@@ -1,3 +1,6 @@
+$colorBase: #6e774a;
+$colorSecondary: #1c1c1b;
+
 body {
     background: #f7f8f3;
     text-decoration: none;
@@ -171,6 +174,12 @@ h1, h2 {
         text-transform: uppercase;
         font-size: 16px;
         position: relative;
+    }
+
+    &__search{
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
     }
 }
 
@@ -352,6 +361,9 @@ h1, h2 {
         cursor: pointer;
         transition-duration: 0.3s;
         outline: none;
+        
+        transform: translateY(5px);
+        
 
         &:hover, &:focus{
             margin-left: 5px; 
@@ -398,7 +410,7 @@ h1, h2 {
     }
 
     &__title{
-        color: #1c1c1b;
+        color: $colorSecondary;
         font-size: 30px;
         display: block;
         margin: 0 90px -2px 0;
@@ -411,11 +423,11 @@ h1, h2 {
         border-bottom: 2px solid transparent;
 
         &--mod{
-            border-bottom: 2px solid #1c1c1b;
+            border-bottom: 2px solid $colorSecondary;
         }
 
         &:hover, &:focus{
-            color: #6e774a;
+            color: $colorBase;
         }
 
         @media screen and (max-width: 1000px){
@@ -434,7 +446,7 @@ h1, h2 {
         display: block;
         text-transform: uppercase;
         font-size: 24px;
-        color: #1c1c1b;
+        color: $colorSecondary;
         text-align: center;
         margin: 0 auto 30px auto;
     }
@@ -482,7 +494,7 @@ h1, h2 {
     }
 
     &__description{
-        color: #6e774a;
+        color: $colorBase;
         line-height: 41px;
         font-size: 18px;
         width: 410px;
@@ -518,7 +530,7 @@ h1, h2 {
 
     &__headline{
         font-size: 30px;
-        color: #1c1c1b;
+        color: $colorSecondary;
         text-align: center;
         margin: 0 0 70px 0;
         text-transform: uppercase;
@@ -540,7 +552,7 @@ h1, h2 {
     &__name{
         text-align: center;
         font-size: 18px;
-        color: #1c1c1b;
+        color: $colorSecondary;
         text-transform: uppercase;
         margin: 0 0 20px 0;
     }
@@ -576,7 +588,7 @@ h1, h2 {
         left: 30px;
         transform: translateY(-50%);
         font-size: 18px;
-        color: #1c1c1b;
+        color: $colorSecondary;
     }
 
     &__btn{
@@ -590,18 +602,18 @@ h1, h2 {
         color: white;
         text-transform: uppercase;
         height: 76px;
-        background-color: #6e774a;
+        background-color: $colorBase;
         border: none;
         outline: none;
         cursor: pointer;
         font-family: 'Oswald', sans-serif;
 
         &:hover, &:focus{
-            background-color: darken(#6e774a, 15);
+            background-color: darken($colorBase, 15);
         }
 
         &:active{
-            background-color: #6e774a;
+            background-color: $colorBase;
         }
     }
 }
@@ -656,7 +668,7 @@ h1, h2 {
 
     &__topicname{
         font-size: 30px;
-        color: #1c1c1b;
+        color: $colorSecondary;
         text-align: center;
         margin: 0 auto 50px auto;
         text-transform: uppercase;
@@ -665,7 +677,7 @@ h1, h2 {
 
     &__headline{
         position: relative;
-        color: #6e774a;
+        color: $colorBase;
         font-size: 18px;
         border-top: 2px solid #eaedde;
         padding: 34px 0 29px 50px;
@@ -722,8 +734,21 @@ h1, h2 {
 
 
 .testimonials{
-
+    position: relative;
     margin: 0 0 175px 0;
+
+    &__text{
+        transform: rotate(-270deg);
+        font-size: 24px;
+        color: #f7f8f3;
+        bottom: 120px;
+        left: -50px;
+        letter-spacing: 6px;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: absolute;
+
+    }
 
     &__slides{
         position: relative;
@@ -818,7 +843,7 @@ h1, h2 {
     background-position: center;
     cursor: pointer;
     z-index: 1000;
-    left: 50%;
+    left: 48%;
 
     &:hover, &:focus{
         background-color: darken(rgba(255, 255, 255, 0.322), 15);
@@ -849,7 +874,7 @@ h1, h2 {
     }
 
     &__menu{
-        border-top: 1px solid #6e774a;
+        border-top: 1px solid $colorBase;
         padding: 100px 0;
     }
 
@@ -862,7 +887,7 @@ h1, h2 {
     }
 
     &__link{
-        color: #6e774a;
+        color: $colorBase;
         font-size: 14px;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -877,7 +902,7 @@ h1, h2 {
     }
 
     &__logo{
-        color: #6e774a;
+        color: $colorBase;
         text-align: center;
         font-size: 60px;
         position: absolute;
@@ -898,7 +923,7 @@ h1, h2 {
     }
 
     &__social-link{
-        color: #6e774a;
+        color: $colorBase;
         display: block;
         margin: 0 30px;
         font-size: 20px;
@@ -929,14 +954,14 @@ h1, h2 {
     }
 
     &__line{
-        background-color: #6e774a;
+        background-color: $colorBase;
         height: 55px;
         width: 2px;
         margin: 0 auto 30px auto;
     }
 
     &__rights{
-        color: #6e774a;
+        color: $colorBase;
         text-align: center;
         font-size: 11px;
         letter-spacing: 2px;
@@ -947,7 +972,7 @@ h1, h2 {
 .form{
     &__headline{
         margin: 0 0 30px 0;
-        color: #1c1c1b;
+        color: $colorSecondary;
         font-size: 18px;
         text-align: center;
         text-transform: uppercase; 
@@ -969,20 +994,21 @@ h1, h2 {
         outline: none;
         background-color: transparent;
         padding: 0 30px;
-        color: #6e774a;
+        color: $colorBase;
         font-size: 16px;
         letter-spacing: 4px;
-        position: relative;
         transition-duration: 0.3s;
+        border: 1px solid transparent;
+        
 
         &:hover, &:focus{
-            transform: scale(1.5) translateX(30px) translateY(40px);
+            border: 1px  $colorBase solid;                       
         }
 
 
 
         &::placeholder{
-            color: #6e774a;
+            color: $colorBase;
             font-size: 16px;
             letter-spacing: 4px;
         }
@@ -995,14 +1021,11 @@ h1, h2 {
         border: none;
         border-left: 2px solid #ced6af;
         cursor: pointer;
-        background-image: url(../images/form__Arrow.png);
-        background-position: center;
-        background-repeat: no-repeat;
         transition-duration: 0.3s;
+        border: 1px solid transparent;
 
         &:hover, &:focus{
-            border: none;
-         transform: rotate(90deg);   
+            border: 1px  $colorBase solid;              
         }
     }
 

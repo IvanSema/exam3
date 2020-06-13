@@ -17,7 +17,6 @@
     <title>exam</title>
 </head>
 <body>
-
     <header class="header" id='menu'>
         <nav class="nav">
             <ul class="nav__ul">
@@ -33,7 +32,11 @@
         <div class="header__help">
             <div class="help__ul">
                 <div class="help__li"><a href="" class="nav__link nav__link--mod">login</a></div>
-                <div class="help__li"><a href="" class="nav__link nav__link--mod">Search</a></div>
+                <div class="help__li">
+                    <svg class='help__search'>
+                    <use xlink:href='images/search.svg#search'></use>
+                </svg>
+                <a href="" class="nav__link nav__link--mod">Search</a></div>
                 <div class="help__li"><a href="" class="nav__link nav__link--mod">Cart (0)</a></div>
             </div>
         </div>
@@ -61,6 +64,7 @@
             <hr class="intro__hr-before-text">
             <span class="intro__text">CBD Potion health</span>
         </div>
+  
 
         </div>
     </div>
@@ -227,10 +231,10 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
 
 
     <div class="testimonials">
-
         <div class="testimonials__slides">
             <div class="slider fade">
                 <div class="testimonials__slide">
+                    <div class="testimonials__text">CBD every day</div>
                     <div class="testimonials__stars">
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
@@ -246,6 +250,7 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
                 </div>
 
                 <div class="testimonials__slide--mod2">
+                    <div class="testimonials__text">CBD every day</div>
                     <div class="testimonials__stars">
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
@@ -261,6 +266,7 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
                 </div>
 
                 <div class="testimonials__slide--mod3">
+                    <div class="testimonials__text">CBD every day</div>
                     <div class="testimonials__stars">
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
                         <img src="images/prefooter_star.png" alt="" class='testimonials__star'>
@@ -307,7 +313,11 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
 
                             <div class="form__wrapper">
                                 <input type="email" class="form__email" placeholder="Email" required>
-                                <button class="form__btn"></button>
+                                <button class="form__btn">
+                                    <svg class='help__search'>
+                                        <use xlink:href='images/search.svg#arrow--btn'></use>
+                                    </svg>
+                                </button>
                             </div>
 
                         </div>
