@@ -27,7 +27,7 @@
             </ul>
         </nav>
 
-        <div class="header__logo">CBD</div>
+        <a href='#intro' class="header__logo">CBD</a>
 
         <div class="header__help">
             <div class="help__ul">
@@ -311,14 +311,14 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
                         <div class="footer__form">
                             <div class="form__headline">Subscribe to Newsletter</div>
 
-                            <div class="form__wrapper">
+                            <form class="form__wrapper">
                                 <input type="email" class="form__email" placeholder="Email" required>
                                 <button class="form__btn">
                                     <svg class='help__search'>
                                         <use xlink:href='images/search.svg#arrow--btn'></use>
                                     </svg>
                                 </button>
-                            </div>
+                            </form>
 
                         </div>
 
@@ -406,7 +406,7 @@ Why does CBD work? The human body has a vast network of receptors, the endocanna
 
 
 <script>
-        $(".nav__link, .arrow--js").click(function () {
+        $(".nav__link, .arrow--js, .header__logo").click(function () {
             elementClick = $(this).attr("href");
             destination = $(elementClick).offset();
             $("body,html").animate({ scrollTop: destination.top }, 1000);

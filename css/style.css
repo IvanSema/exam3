@@ -155,6 +155,13 @@ h1, h2 {
           flex-grow: 100;
   text-align: center;
   font-size: 30px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.header__logo:hover, .header__logo:focus {
+  color: #6e774a;
 }
 
 @media screen and (max-width: 1200px) {

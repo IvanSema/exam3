@@ -146,6 +146,12 @@ h1, h2 {
         flex-grow: 100;
         text-align: center;
         font-size: 30px;
+        text-decoration: none;
+        transition-duration: 0.3s;
+
+        &:hover, &:focus{
+            color: $colorBase;
+        }
         @media screen and (max-width: 1200px){
             padding: 0 0 0 30px;
         text-align: left;
